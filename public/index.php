@@ -27,6 +27,7 @@
                 <input type="date" name="fecha-final">
             </p>
             <p>
+                
                 <label for="formato">Formato del calendario:</label>
                 <select name="formato">
                     <option value="HTML">HTML</option>
