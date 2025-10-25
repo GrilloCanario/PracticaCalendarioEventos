@@ -1,12 +1,20 @@
 <?php
+namespace Dsw\CalendarioEvento;
 
 class Ponente {
     public function __construct(
-        string $titulo, 
-        string $nombre, 
-        string $apellido
-    ) {
-        
-    }
+        private string $titulo,
+        private string $nombre,
+        private string $apellido
+    ) {}
 
+    public function getTitulo(): string {
+        return $this->titulo;
+    }
+    public function getNombre(): string {
+        return $this->nombre;
+    }
+    public function getApellido(): string {
+        return $this->apellido;
+    }
 }
