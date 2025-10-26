@@ -1,5 +1,6 @@
 <?php
 namespace Dsw\CalendarioEvento;
+require_once '../vendor/autoload.php';
 
 class Ponente {
     public function __construct(

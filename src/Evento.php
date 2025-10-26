@@ -1,6 +1,5 @@
 <?php
 namespace Dsw\CalendarioEvento;
-
 require_once '../vendor/autoload.php';
 
 
