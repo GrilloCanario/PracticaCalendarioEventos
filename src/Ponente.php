@@ -1,6 +1,7 @@
 <?php
 namespace Dsw\CalendarioEvento;
 
+
 class Ponente {
     public function __construct(
         private string $titulo,

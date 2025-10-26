@@ -6,6 +6,7 @@
     <title>Generador de Eventos</title>    
 </head>
 <body>
+    
     <h1>Generador de Eventos</h1>
     
     <form action="process.php" method="post">

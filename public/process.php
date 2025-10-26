@@ -5,7 +5,7 @@ require_once '../src/Calendario.php';
 use Dsw\CalendarioEvento\DatosFalsos;
 use Dsw\CalendarioEvento\Calendario;
 
-if($_POST){
+if($_POST) {
     $numPonentes = (int)$_POST['num-ponentes'];
     $numEventos = (int)$_POST['num-eventos'];
     $fechaInicio = $_POST['fecha-inicio'];

@@ -144,7 +144,6 @@ class Calendario
 
         // Crear CSV con punto y coma como separador
         // \n para saltos de línea
-
         $csv = "Título;Descripción;Fecha;Tiempo Faltante;Ponente;";
 
         foreach ($this->eventos as $evento) {

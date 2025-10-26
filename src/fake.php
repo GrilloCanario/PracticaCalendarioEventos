@@ -123,7 +123,6 @@ class DatosFalsos {
 
         // Ordenar eventos por fecha (ascendente)
         // usort($eventos, fn($a, $b) => $a->getFecha()->timestamp - $b->getFecha()->timestamp);
-
         return $eventos;
     }
 
