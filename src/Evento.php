@@ -1,17 +1,18 @@
 <?php
 namespace Dsw\CalendarioEvento;
 
-require_once '../vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
+use Carbon\Carbon;
 
 class Evento {
 
     private string $titulo;
     private string $descripcion;
-    private \DateTime $fecha;
+    private Carbon $fecha;
     private Ponente $ponente;
 
-    public function __construct(string $titulo, string $descripcion, \DateTime $fecha, Ponente $ponente) {
+    public function __construct(string $titulo, string $descripcion, Carbon $fecha, Ponente $ponente) {
         $this->titulo = $titulo;
         $this->descripcion = $descripcion;
         $this->fecha = $fecha;
@@ -26,7 +27,7 @@ class Evento {
         return $this->descripcion;
     }
 
-    public function getFecha(): \DateTime {
+    public function getFecha(): Carbon {
         return $this->fecha;
     }
 
