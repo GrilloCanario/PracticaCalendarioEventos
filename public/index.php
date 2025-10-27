@@ -4,30 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generador de Eventos</title>    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
-    <h1>Generador de Eventos</h1>
+    <h1>GENERADOR DE EVENTOS</h1>
     
     <form action="process.php" method="post">
         <p>
-            <label for="ponentes">Números de ponentes:</label>
+            <label for="ponentes">NÚMERO DE PONENTES</label>
             <input type="number" placeholder="1" name="num-ponentes">  
         </p>
         <p>
-            <label for="eventos">Números de eventos:</label>
+            <label for="eventos">NÚMERO DE EVENTOS</label>
             <input type="number" placeholder="1" name="num-eventos">
         </p>
         <p>
-            <label for="fecha-inicio">Fecha de inicio del evento:</label>
+            <label for="fecha-inicio">FECHA DE INICIO DEL/LOS EVENTO/S</label>
             <input type="date" name="fecha-inicio">
         </p>
         <p>
-            <label for="fecha-final">Fecha de fin del evento:</label>
+            <label for="fecha-final">FECHA DE FIN DEL/LOS EVENTO/S</label>
             <input type="date" name="fecha-final">
         </p>
         <p>
-            <label for="formato">Formato del calendario:</label>
+            <label for="formato">FORMATO DESEADO DEL CALENDARIO</label>
             <select name="formato" id="formato">
                 <option value="HTML">HTML</option>
                 <option value="PDF">PDF</option>

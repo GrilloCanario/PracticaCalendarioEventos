@@ -44,41 +44,135 @@ class Calendario
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Calendario de Eventos</title>
                 <style>
-                    .evento-pasado {
-                        text-decoration: line-through;
-                        background-color: #f0f0f0;
-                        color: #999;
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
                     }
 
-                    .evento-futuro {
-                        background-color: #e8f5e8;
+                    body {
+                        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                        background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+                        min-height: 100vh;
+                        padding: 40px 20px;
                     }
 
-                    .evento-hoy {
-                        background-color: #fff3cd;
-                        font-weight: bold;
+                    h1 {
+                        color: #2c2c2c;
+                        font-size: 2.2em;
+                        margin-bottom: 15px;
+                        text-align: center;
+                        font-weight: 600;
+                        letter-spacing: -0.5px;
+                    }
+
+                    h1::after {
+                        content: "";
+                        display: block;
+                        width: 200px;
+                        height: 3px;
+                        background: #89CFF0;
+                        margin: 12px auto 0;
+                        border-radius: 2px;
+                    }
+
+                    p {
+                        text-align: center;
+                        color: #4a4a4a;
+                        font-size: 1em;
+                        margin-bottom: 30px;
+                    }
+
+                    p strong {
+                        color: #2c2c2c;
                     }
 
                     table {
                         border-collapse: collapse;
                         width: 100%;
-                        margin: 20px 0;
-                    }
-
-                    th,
-                    td {
-                        border: 1px solid #ddd;
-                        padding: 12px;
-                        text-align: left;
+                        max-width: 1400px;
+                        margin: 0 auto;
+                        background: white;
+                        border-radius: 12px;
+                        overflow: hidden;
+                        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
                     }
 
                     th {
-                        background-color: #f2f2f2;
+                        background: radial-gradient(circle at top, #44a4f7ff 0%, #89CFF0 100%);
+                        color: white;
+                        padding: 16px;
+                        text-align: center;
+                        font-weight: 900;
+                        letter-spacing: 0.3px;
+                        font-size: 0.95em;
+                    }
+
+                    td {
+                        padding: 14px 16px;
+                        border-bottom: 1px solid #e8e8e8;
+                        color: #333;
+                        font-size: 0.95em;
+                    }
+
+                    tr:last-child td {
+                        border-bottom: none;
+                    }
+
+                    tr:hover {
+                        background-color: #f9f9f9;
+                    }
+
+                    .evento-pasado {
+                        text-decoration: line-through;
+                        background-color: #f5f5f5;
+                        color: #999;
+                    }
+
+                    .evento-pasado:hover {
+                        background-color: #eeeeee;
+                    }
+
+                    .evento-futuro {
+                        background-color: #f0f9ff;
+                    }
+
+                    .evento-futuro:hover {
+                        background-color: #e5f4ff;
+                    }
+
+                    .evento-hoy {
+                        background-color: #fff8e1;
+                        font-weight: 600;
+                    }
+
+                    .evento-hoy:hover {
+                        background-color: #fff3cd;
                     }
 
                     .tiempo-faltante {
                         color: #666;
+                        font-style: italic;
                     }
+
+                    @media (max-width: 768px) {
+                        body {
+                            padding: 20px 10px;
+                        }
+                        
+                        h1 {
+                            font-size: 1.6em;
+                        }
+                        
+                        table {
+                            font-size: 0.85em;
+                        }
+                        
+                        th, td {
+                            padding: 10px 8px;
+                        }
+                    }
+                    
                 </style>
             </head>
             <body>
